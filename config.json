@@ -1,0 +1,32 @@
+{
+  "name": "Zwift App",
+  "version": "1.1.6.6",
+  "slug": "zwift_app",
+  "description": "Collect data from Zwift Mobile app API",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "url": "https://www.portabit.se/hassio-addon-zwift-app/",
+  "startup": "application",
+  "boot": "auto",
+  "options": {
+    "username": "email",
+    "password": "password",
+    "player_id": "zwift_id",
+    "mqtt_host_name": "IP-adress mqtt",
+    "mqtt_client_name": "mqtt client name",
+    "mqtt_login": "username",
+    "mqtt_pw": "password",
+    "mqtt_topic": "home/zwift/state",
+    "mqtt_topic_will": "home/zwift/LWT"
+  },
+  "schema": {
+    "username":"str",
+    "password":"str",
+    "player_id": "str",
+    "mqtt_host_name": "str",
+    "mqtt_client_name": "str",
+    "mqtt_login": "str",
+    "mqtt_pw": "str",
+    "mqtt_topic": "str",
+    "mqtt_topic_will": "str"
+  }
+}
